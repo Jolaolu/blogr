@@ -69,3 +69,8 @@ form input {
     border: none;
     border-radius: .3rem;
 }
+main{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}

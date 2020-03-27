@@ -5,7 +5,7 @@
       <label for="name"> Name</label>
       <input type="text" name="name"  placeholder="John Doe" v-model="authDetails.name" />
       <label for="email">Email Address</label>
-      <input type="email" name="email"  placeholder="jagaban@borgu.com" v-model="authDetails.email" />
+      <input type="email" name="email"  placeholder="yourdopeemail@something.com" v-model="authDetails.email" />
       <label for="password">Password</label>
       <input type="password" name="password" placeholder="password" v-model="authDetails.password" />
       <button class="auth-submit">submit</button>
@@ -38,6 +38,3 @@ export default {
 
 }
 </script>
-<style>
-
-</style>

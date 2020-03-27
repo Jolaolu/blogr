@@ -15,7 +15,7 @@ const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'http://localhost:4000/
 // Config
 
 const authLink = setContext(async (_, { headers }) => {
-  // Use your async token function here:
+  // get the authentication token from local storage if it exists
   const token = JSON.parse(localStorage.getItem('apollo-token'))
   // Return the headers to the context so httpLink can read them
   return {
@@ -64,7 +64,6 @@ const defaultOptions = {
 // Create apollo client
 export const { apolloClient, wsClient } = createApolloClient({
   ...defaultOptions
-  // ...options
 })
 apolloClient.wsClient = wsClient
 
@@ -75,7 +74,7 @@ export function createProvider (options = {}) {
     defaultClient: apolloClient,
     defaultOptions: {
       $query: {
-        // fetchPolicy: 'cache-and-network',
+        fetchPolicy: 'cache-and-network'
       }
     },
     errorHandler (error) {

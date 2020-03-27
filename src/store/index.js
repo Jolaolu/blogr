@@ -40,7 +40,7 @@ export default new Vuex.Store({
         localStorage.setItem('apollo-token', token)
         dispatch('setUser')
       } catch (e) {
-        console.log(e)
+        // console.log(e)
       }
     },
     async login ({ commit, dispatch }, authDetails) {
@@ -51,7 +51,7 @@ export default new Vuex.Store({
         localStorage.setItem('apollo-token', token)
         dispatch('setUser')
       } catch (e) {
-        console.log(e)
+        // console.log(e)
       }
     },
     async setUser ({ commit }) {

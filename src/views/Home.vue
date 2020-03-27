@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <main>
-     Yaay! You are authenticated!
+     Yaay! User authenticated!
     </main>
   </div>
 </template>

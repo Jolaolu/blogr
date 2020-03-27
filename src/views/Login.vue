@@ -3,7 +3,7 @@
     <h3>Log In</h3>
     <form action="POST" @submit.prevent="loginUser">
       <label for="email">Email Address</label>
-      <input type="email" name="email"  placeholder="jagaban@borgu.com" v-model="authDetails.email" />
+      <input type="email" name="email"  placeholder="yourdopeemail@something.com" v-model="authDetails.email" />
       <label for="password">Password</label>
       <input type="password" name="password" placeholder="password" v-model="authDetails.password" />
       <button class="auth-submit">submit</button>
